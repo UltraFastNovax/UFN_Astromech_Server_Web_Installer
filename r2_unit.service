@@ -1,0 +1,19 @@
+[Unit]
+Description=Main Java program for R2 unit Astromech
+After=network.target
+
+[Service]
+User=root
+Nice=1
+KillMode=none
+SuccessExitStatus=0 1
+ProtectHome=true
+ProtectSystem=full
+PrivateDevices=true
+NoNewPrivileges=true
+WorkingDirectory=/etc/r2_unit/java
+ExecStart=/etc/r2_unit/java/start.bash
+ExecStop=/etc/r2_unit/java/stop.bash
+
+[Install]
+WantedBy=multi-user.target
