@@ -11,7 +11,7 @@ cd ./installer
 mkdir ./downloads
 cd ./downloads
 wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.deb
-wget https://raw.githubusercontent.com/UltraFastNovax/UFN_Astromech_Server_Installer/main/r2_unit.service
+wget https://raw.githubusercontent.com/UltraFastNovax/UFN_Astromech_Server_Web_Installer/main/r2_unit.service
 mkdir java
 cd ./java
 #download java files
