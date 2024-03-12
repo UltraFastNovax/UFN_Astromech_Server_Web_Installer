@@ -25,7 +25,7 @@ dpkg -i ./downloads/jdk-17.0.10_linux-x64_bin.deb
 mkdir /etc/r2_unit
 cp -r ./downloads/java /etc/r2_unit
 echo "java /etc/r2_unit/java/Main.java" >> /etc/r2_unit/start.bash
-echo "" >> /etc/r2_unit/stop.bash
+echo "" >> /etc/r2_unit/kill.bash
 cp ./downloads/r2_unit.service /etc/systemd/system/r2_unit.service
 systemctl enable /etc/systemd/system/r2_unit.service
 cd ../
