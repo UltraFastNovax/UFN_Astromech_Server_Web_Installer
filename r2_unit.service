@@ -12,8 +12,8 @@ ProtectSystem=full
 PrivateDevices=true
 NoNewPrivileges=true
 WorkingDirectory=/etc/r2_unit/java
-ExecStart=/etc/r2_unit/java/start.bash
-ExecStop=/etc/r2_unit/java/stop.bash
+ExecStart=/etc/r2_unit/start.bash
+ExecStop=/etc/r2_unit/kill.bash
 
 [Install]
 WantedBy=multi-user.target
