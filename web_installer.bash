@@ -15,6 +15,7 @@ curl https://raw.githubusercontent.com/UltraFastNovax/UFN_Astromech_Server_Web_I
 mkdir java
 cd ./java
 #download java files
+#curl [URL] --output [NAME]
 cd ../../
 
 # Install Java 17.0.10
@@ -23,8 +24,8 @@ dpkg -i ./downloads/jdk-17.0.10_linux-x64_bin.deb
 # Set up service
 mkdir /etc/r2_unit
 cp -r ./downloads/java /etc/r2_unit
-echo "java Main.java" >> /etc/r2_unit/java/start.bash
-echo "pkill java" >> /etc/r2_unit/java/stop.bash
+echo "java /etc/r2_unit/java/Main.java" >> /etc/r2_unit/start.bash
+echo "" >> /etc/r2_unit/stop.bash
 cp ./downloads/r2_unit.service /etc/systemd/system/r2_unit.service
 systemctl enable /etc/systemd/system/r2_unit.service
 cd ../
